@@ -20,6 +20,7 @@ python3 -m http.server 8000
 - **Single shared stylesheet** (`css/style.css`) — all pages styled from one file, organized by page-specific sections with comment headers
 - **No templating** — header, footer, and nav are duplicated across all 7 HTML files. When modifying shared elements (nav links, footer), update every HTML file
 - **No build/bundling** — assets referenced directly, Google Fonts loaded via `<link>` tags
+- **Favicon** — all pages include `<link rel="icon" type="image/png" href="assets/logo.png">` in `<head>`. Include this in any new pages
 
 ### Pages
 
