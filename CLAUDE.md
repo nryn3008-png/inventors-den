@@ -39,7 +39,7 @@ The stylesheet follows a strict section order with `/* === Section Name === */` 
 
 1. Reset & Base (CSS variables, fonts)
 2. Buttons (`.btn`, `.btn-primary`, `.btn-outline`)
-3. Header (`.site-header`, `.nav-bar`, `.nav-link-active`)
+3. Header (`.site-header`, `.nav-bar`, `.nav-link-active`, `.nav-hamburger`)
 4. Homepage sections (hero, marquee, products grid, about, workshops)
 5. Footer (`.site-footer`)
 6. About Page (`.about-story`, `.about-recognized`, `.about-mission-vision`, `.about-leadership`)
@@ -73,7 +73,8 @@ Defined as CSS custom properties in `:root`:
 - **Active nav state**: Add `class="nav-link-active"` to the current page's nav `<a>` element
 - **Product cards**: Use `.pcard` for normal (image left), `.pcard-reverse` for alternating (image right)
 - **Blog detail pages**: Follow the existing pattern — `.blog-back-link` → `.blog-article-header` → `.blog-article-hero` → `.blog-article-body` with `.blog-section` blocks
-- **New pages**: Copy an existing page's header/footer/nav structure and add `nav-link-active` to the appropriate link
+- **New pages**: Copy an existing page's header/footer/nav structure (including the `.nav-hamburger` button) and add `nav-link-active` to the appropriate link
+- **Mobile hamburger menu**: A `<button class="nav-hamburger">` with 3 `<span>` elements sits between the logo and `.nav-right` in every page. Hidden on desktop (`display: none`), shown at 768px. JS in `main.js` toggles `.open` class on both `.nav-hamburger` and `.nav-right`. The hamburger animates to an X via CSS transforms. Menu closes when any link is clicked
 - **Horizontal padding**: Desktop uses `120px`, tablet `60px`, mobile `24px` — consistent across all page sections
 - **Section spacing**: `margin-top: 88px` on desktop, `48px` on mobile
 - **Glassmorphic effects**: Used via `backdrop-filter: blur()` on nav bar, product card overlays, contact form
