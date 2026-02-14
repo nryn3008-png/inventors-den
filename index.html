@@ -3,30 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inventors Den</title>
+  <title>Inventor's Den</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Mulish:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Inventors Den</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Inventor's Den" class="logo-img">
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="index.html#workshops">Blogs</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">
+          Enquire Now
+          <img src="assets/arrow-right.svg" alt="" class="btn-icon">
+        </a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <h1>Welcome to Inventors Den</h1>
-      <p>Where ideas come to life.</p>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Inventor's <span class="text-orange">Den</span>
+        </h1>
+        <p class="hero-subtitle">
+          A new age startup promoting sustainability through product innovation.
+        </p>
+        <a href="#products" class="btn btn-primary">
+          Check our products
+          <img src="assets/arrow-right.svg" alt="" class="btn-icon">
+        </a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-image.png" alt="Lighthouse illustration">
+      </div>
     </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-items">
+          <img src="assets/marquee-1.png" alt="Startup India" class="marquee-logo">
+          <img src="assets/marquee-2.png" alt="Partner 2" class="marquee-logo">
+          <img src="assets/marquee-3.png" alt="Ministry of Education" class="marquee-logo">
+          <img src="assets/marquee-4.png" alt="ACE Foundation" class="marquee-logo">
+          <img src="assets/marquee-5.png" alt="IIC" class="marquee-logo">
+        </div>
+        <div class="marquee-items" aria-hidden="true">
+          <img src="assets/marquee-1.png" alt="" class="marquee-logo">
+          <img src="assets/marquee-2.png" alt="" class="marquee-logo">
+          <img src="assets/marquee-3.png" alt="" class="marquee-logo">
+          <img src="assets/marquee-4.png" alt="" class="marquee-logo">
+          <img src="assets/marquee-5.png" alt="" class="marquee-logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products-section">
+      <div class="section-header">
+        <h2 class="section-title">Our <span class="text-orange">Products</span></h2>
+        <a href="#" class="btn btn-outline">View All</a>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="assets/product-card.jpg" alt="Hydro" class="product-card-image">
+          <div class="product-card-overlay">
+            <h3 class="product-card-title">Hydro</h3>
+            <p class="product-card-desc">Fresh Water Quality Monitoring System</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/product-card.jpg" alt="PET-Fil" class="product-card-image">
+          <div class="product-card-overlay">
+            <h3 class="product-card-title">PET-Fil</h3>
+            <p class="product-card-desc">Recycled 3D Printing Filament Maker</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/product-card.jpg" alt="Matsya ROV" class="product-card-image">
+          <div class="product-card-overlay">
+            <h3 class="product-card-title">Matsya ROV</h3>
+            <p class="product-card-desc">Remote Operated Vehicle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-image">
+        <img src="assets/about-image.png" alt="About Inventor's Den">
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">About <span class="text-orange">Us</span></h2>
+        <p class="about-text">
+          We are a new age startup contributing in the sectors of "Water Quality Monitoring" &amp; "Sustainable Additive Manufacturing". We are focused on creating solutions that can cater to the masses and make their lives better.
+        </p>
+        <a href="#" class="btn btn-outline">
+          Learn More
+          <img src="assets/arrow-right.svg" alt="" class="btn-icon">
+        </a>
+      </div>
+    </section>
+
+    <!-- Seminars & Workshops Section -->
+    <section id="workshops" class="section workshops-section">
+      <h2 class="section-title">Seminars <span class="text-orange">&amp;</span> Workshops</h2>
+      <div class="event-grid">
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="assets/event-card.jpg" alt="Creative & Critical Thinking">
+          </div>
+          <div class="event-card-info">
+            <p class="event-card-title">Creative &amp; Critical Thinking</p>
+            <div class="event-card-meta">
+              <span class="event-card-location">MIT ID - Indore</span>
+              <span class="event-card-date">Jan 05, 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="assets/event-card.jpg" alt="Creative & Critical Thinking">
+          </div>
+          <div class="event-card-info">
+            <p class="event-card-title">Creative &amp; Critical Thinking</p>
+            <div class="event-card-meta">
+              <span class="event-card-location">MIT ID - Indore</span>
+              <span class="event-card-date">Jan 05, 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="assets/event-card.jpg" alt="Creative & Critical Thinking">
+          </div>
+          <div class="event-card-info">
+            <p class="event-card-title">Creative &amp; Critical Thinking</p>
+            <div class="event-card-meta">
+              <span class="event-card-location">MIT ID - Indore</span>
+              <span class="event-card-date">Jan 05, 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="assets/event-card.jpg" alt="Creative & Critical Thinking">
+          </div>
+          <div class="event-card-info">
+            <p class="event-card-title">Creative &amp; Critical Thinking</p>
+            <div class="event-card-meta">
+              <span class="event-card-location">MIT ID - Indore</span>
+              <span class="event-card-date">Jan 05, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2026 Inventors Den. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-copyright">&copy; 2025 Inventors Den Pvt. Ltd. All Rights Reserved.</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><img src="assets/social-instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="X"><img src="assets/social-x.svg" alt="X"></a>
+      <a href="#" aria-label="LinkedIn"><img src="assets/social-linkedin.svg" alt="LinkedIn"></a>
+    </div>
+    <p class="footer-credit">
+      Designed and Developed by <a href="https://www.collabrixdesigns.com/">Collabrix Designs</a>.
+    </p>
   </footer>
 
   <script src="js/main.js"></script>
